@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16 avr. 2010 11:24:25 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="dao.Hibernate.Model.Errors" table="ERRORS">
+        <id name="errorId" type="string">
+            <column name="error_id" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="errorCode" type="string">
+            <column name="error_code" length="50" />
+        </property>
+        <property name="errorDate" type="timestamp">
+            <column name="error_date" length="23" />
+        </property>
+        <property name="customerMsisdn" type="string">
+            <column name="customer_msisdn" length="50" />
+        </property>
+        <property name="merchantMsisdn" type="string">
+            <column name="merchant_msisdn" length="50" />
+        </property>
+        <property name="transactionCode" type="string">
+            <column name="transaction_code" length="50" />
+        </property>
+        <property name="ammount" type="java.lang.Long">
+            <column name="ammount" precision="18" scale="0" />
+        </property>
+        <property name="memo" type="string">
+            <column name="memo" length="50" />
+        </property>
+        <property name="pinTiers" type="string">
+            <column name="pin_tiers" length="1" />
+        </property>
+        <property name="wrongPin" type="string">
+            <column name="wrong_pin" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

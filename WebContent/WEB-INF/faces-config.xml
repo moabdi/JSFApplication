@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="1.2" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xi="http://www.w3.org/2001/XInclude"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
+ <converter>
+  <converter-id>FeesConverter</converter-id>
+  <converter-class>metier.eps.converters.FeesConverter</converter-class>
+ </converter>
+ <validator>
+  <validator-id>emailValidator</validator-id>
+  <validator-class>org.hibernate.validator.EmailValidator</validator-class>
+ </validator>
+ <validator>
+  <validator-id>mustBeInteger</validator-id>
+  <validator-class>metier.validators.IntegerValidator</validator-class>
+ </validator>
+  <validator>
+  <validator-id>msisdnValidator</validator-id>
+  <validator-class>metier.validators.MsisdnValidator</validator-class>
+ </validator>
+   <validator>
+  <validator-id>emailBdValidator</validator-id>
+  <validator-class>metier.validators.EmailBdValidator</validator-class>
+ </validator>
+ <validator>
+  <validator-id>mustBePortNumber</validator-id>
+  <validator-class>metier.validators.PortNumberValidator</validator-class>
+ </validator>
+ <validator>
+  <validator-id>mustBeHexadecimal</validator-id>
+  <validator-class>metier.validators.HexadecimalValidation</validator-class>
+ </validator>
+ <validator>
+  <validator-id>mustBeBigDecimal</validator-id>
+  <validator-class>metier.validators.BigDecimalValidation</validator-class>
+ </validator>
+ <validator>
+  <validator-id>mustBeNumber</validator-id>
+  <validator-class>metier.validators.NumberValidator</validator-class>
+ </validator>
+ <validator>
+  <validator-id>mustBeSelected</validator-id>
+  <validator-class>metier.validators.ListValidator</validator-class>
+ </validator>
+ <validator>
+  <validator-id>mustBePourcent</validator-id>
+  <validator-class>metier.validators.PourcentValidator</validator-class>
+ </validator>
+ <validator>
+  <validator-id>mustBeIpAdress</validator-id>
+  <validator-class>metier.validators.IpValidator</validator-class>
+ </validator>
+ 
+ <application>
+  <message-bundle>i18n.messages</message-bundle>
+  <resource-bundle>
+   <base-name>i18n.messages</base-name>
+   <var>msg</var>
+  </resource-bundle>
+ </application>
+ 
+ <lifecycle>
+  <phase-listener>metier.eps.jsf.security.UserPhaseListener</phase-listener>
+ </lifecycle>
+ 
+</faces-config>

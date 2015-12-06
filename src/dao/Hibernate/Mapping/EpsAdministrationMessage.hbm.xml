@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 sept. 2009 09:59:05 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="dao.Hibernate.Model.EpsAdministrationMessage" table="EPS_ADMINISTRATION_MESSAGE">
+        <composite-id name="id" class="dao.hibernate.Model.EpsAdministrationMessageId">
+            <key-property name="userCode" type="string">
+                <column name="USER_CODE" length="15" />
+            </key-property>
+            <key-property name="messageNumber" type="short">
+                <column name="MESSAGE_NUMBER" precision="4" scale="0" />
+            </key-property>
+            <key-property name="subject" type="string">
+                <column name="SUBJECT" length="32" />
+            </key-property>
+        </composite-id>
+        <property name="details" type="string">
+            <column name="DETAILS" length="500" />
+        </property>
+        <property name="priority" type="java.lang.Character">
+            <column name="PRIORITY" length="1" />
+        </property>
+        <property name="messageDate" type="date">
+            <column name="MESSAGE_DATE" length="7" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 8 mai 2008 09:45:39 by Hibernate Tools 3.2.0.CR1 -->
+<hibernate-mapping>
+    <class name="dao.Hibernate.Model.UserProfile" table="USER_PROFILE">
+        <id name="username" type="string">
+            <column name="USERNAME" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>

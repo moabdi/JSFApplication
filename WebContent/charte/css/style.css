@@ -1,0 +1,185 @@
+/* CSS Document */
+body{margin: 0 0 0 0; padding:0; background-color:#fff; font:12px Verdana, Arial, Helvetica, sans-serif;}
+div, p, ul, ol, h1, h2, h3, h4, h5, img{margin:0px; padding:0px;}
+ul{list-style-type:none;}
+
+/*--MAIN PANEL--*/
+#mainPan{width:100%; position:relative; margin:0 auto;}
+
+.animPan{
+	z-index:1;
+	margin:0 auto;
+	position: relative;
+	width:1000px;
+}
+
+.loginPan{
+	background-color:#3399CC;
+	width:1000px;
+	margin:0 auto;
+	top:0px;
+	position:relative;
+	height: 400px;
+	
+}
+
+.footerPan{
+	background-color:#b5bcbd;
+	border:1px;
+	width:1000px;
+	margin:0 auto;
+	top:0px;
+	position:relative;
+	height: 20px;
+	
+}
+
+table.login {
+	text-align: center;
+	background: url("../../images/login_backgroud2.png");
+	width: 450px;
+	height: 227px;
+}
+
+/* Colonne contenant les libellés */
+.lib {
+	font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+	font-size: 12px;
+	/*	background-color:#D1DAE3;   */
+	color: #000000;
+	text-align: right;
+}
+
+/************
+ *   link   *
+ ***********/
+a:hover {
+	color: #e99e43
+}
+
+a.lienDesactive {
+	color: #000000;
+}
+
+a.lienDesactive:Hover { /**	color:#001F76;*/
+	color: #000000;
+}
+
+A {
+	color: #001F76;
+	text-decoration: none;
+}
+
+A:Active {
+	color: #001F76;
+	text-decoration: none;
+}
+
+input.coloredButton {
+	background-color: #E99E43;
+	font-size: 12px;
+	color: #001F76;
+	font-weight: bold;
+	border: 2px outset #c0c0c0;
+}
+
+input.coloredButtonInverse {
+	font-size: 12px;
+	color: #E99E43;
+	font-weight: bold;
+	background-color: #001F76;
+	font-weight: bold;
+	border: 2px outset #c0c0c0;
+}
+
+input.smallBouton {
+	background-color: #E99E43;
+	font-size: 8px;
+	color: #001F76;
+	font-weight: bold;
+	border: 2px outset #c0c0c0;
+}
+
+input.tailleA {
+	width: 68px;
+}
+
+input.tailleB {
+	width: 88px;
+}
+
+input.tailleC {
+	width: 123px;
+}
+
+input.tailleD {
+	width: 182px;
+}
+
+input.coloredButtonDisabled {
+	font-size: 12px;
+	color: grey;
+	font-weight: bold;
+	background-color: #E99E43;
+	font-weight: bold;
+	height: 20px;
+	border: 2px outset #c0c0c0;
+}
+
+/*************
+ *  input, option, select, textarea   *
+ ************/
+INPUT {
+	FONT: 11px Verdana;
+	COLOR: #000000;
+}
+
+OPTION {
+	FONT: 11px Verdana;
+	COLOR: #000000;
+	BACKGROUND-COLOR: #FFFFFF
+}
+
+SELECT {
+	FONT: 11px Verdana;
+	COLOR: #000000;
+	BACKGROUND-COLOR: #FFFFFF
+}
+
+TEXTAREA {
+	FONT: bold 11px Verdana;
+	COLOR: #000000;
+	BACKGROUND-COLOR: #FFFFFF
+}
+
+/************
+ *   richTree   *
+ ***********/
+.rich-tree {
+	font-weight: bold;
+	color: maroon;
+}
+
+.inputs {
+	font-size: 11px;
+	font-family: verdana;
+}
+
+
+/*--TOP PANEL--*/
+#topPan{width:778px; height:174px; background:url(images/header.jpg) 100% 0 no-repeat #0799E3; color:#fff; margin:0; position:relative;}
+#topPan img.logo{width:102px; height:91px; display:block; padding:28px 0 0;}
+#topPan h1{width:191px; height:74px; position:absolute; top:45px; left:122px; display:block; font:14px/14px Arial, Helvetica, sans-serif; background:url(images/companyname.gif) 0 0 no-repeat; padding:32px 0 0;}
+#topservicesPan{width:210px; height:168px; background:url(images/services-bg.jpg) 0 0 no-repeat; position:absolute; top:0px; right:226px;} 
+#topservicesPan h2{width:130px; height:20px; background:url(images/servicesbg.gif) 0 0 repeat-x #68EF00; color:#317400; font:18px/14px Georgia, "Times New Roman", Times, serif; margin:34px 0 0 37px;}
+#topservicesPan ul{width:130px; height:79px; margin:0 0 0 37px;}
+#topservicesPan ul li{height:20px;}
+#topservicesPan ul li.onelink a{display:block; width:94px; height:20px; background: url(images/serviceslink1bg.gif) 0 72% no-repeat #6DFD00; color:#01699F; font:13px/20px Georgia, "Times New Roman", Times, serif; text-decoration:none;}
+#topservicesPan ul li.onelink a:hover{text-decoration:none;  background: url(images/serviceslink1bg.gif) 0 72% no-repeat #6DFD00; color:#0A4767;}
+#topservicesPan ul li.threelink a{display:block; width:119px; height:20px; background:url(images/serviceslink3bg.gif) 30% 0 no-repeat #6DFD00; color:#01699F; font:13px/20px Georgia, "Times New Roman", Times, serif; text-decoration:none;}
+#topservicesPan ul li.threelink a:hover{text-decoration:none;  width:119px; height:20px; background: url(images/serviceslink3bg.gif) 30% 0 no-repeat #6DFD00; color:#0A4767;}
+
+
+/*--/TOP PANEL--*/
+
+

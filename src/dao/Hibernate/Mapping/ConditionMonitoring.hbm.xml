@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 1 avr. 2010 12:42:28 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="dao.Hibernate.Model.ConditionMonitoring" table="CONDITION_MONITORING">
+        <id name="conditionCode" type="string">
+            <column name="Condition_code" length="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="wording" type="string">
+            <column name="Wording" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>

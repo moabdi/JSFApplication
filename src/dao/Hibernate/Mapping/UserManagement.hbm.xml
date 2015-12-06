@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2 avr. 2010 09:55:04 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="dao.Hibernate.Model.UserManagement" table="USER_MANAGEMENT">
+        <id name="userCode" type="string">
+            <column name="USER_CODE" length="15" />
+            <generator class="assigned" />
+        </id>
+        <property name="userName" type="string">
+            <column name="USER_NAME" length="30" />
+        </property>
+        <property name="userType" type="string">
+            <column name="USER_TYPE" length="1" />
+        </property>
+        <property name="userPassword" type="string">
+            <column name="USER_PASSWORD" />
+        </property>
+        <property name="userBankCode" type="string">
+            <column name="USER_BANK_CODE" length="5" />
+        </property>
+        <property name="userBranchCode" type="string">
+            <column name="USER_BRANCH_CODE" length="5" />
+        </property>
+        <property name="numberOfTries" type="java.lang.Long">
+            <column name="NUMBER_OF_TRIES" precision="3" scale="0" />
+        </property>
+        <property name="numberOfTriesAllowed" type="java.lang.Long">
+            <column name="NUMBER_OF_TRIES_ALLOWED" precision="3" scale="0" />
+        </property>
+        <property name="ipAddressMang" type="string">
+            <column name="IP_ADDRESS_MANG" length="1" />
+        </property>
+        <property name="ipAddress" type="string">
+            <column name="IP_ADDRESS" length="20" />
+        </property>
+        <property name="connected" type="string">
+            <column name="CONNECTED" length="1" />
+        </property>
+        <property name="firstConnection" type="java.lang.Character">
+            <column name="FIRST_CONNECTION" length="1" />
+        </property>
+        <property name="nbreSessionAllowed" type="java.lang.Integer">
+            <column name="NBRE_SESSION_ALLOWED" precision="3" scale="0" />
+        </property>
+        <property name="nbreSessionConnected" type="java.lang.Integer">
+            <column name="NBRE_SESSION_CONNECTED" precision="2" scale="0" />
+        </property>
+        <property name="lengthPassword" type="java.lang.Integer">
+            <column name="LENGTH_PASSWORD" precision="2" scale="0" />
+        </property>
+        <property name="complexityFlag" type="java.lang.Character">
+            <column name="COMPLEXITY_FLAG" length="1" />
+        </property>
+        <property name="expirationPassword" type="java.lang.Long">
+            <column name="EXPIRATION_password" precision="4" scale="0" />
+        </property>
+        <property name="dateStartPass" type="timestamp">
+            <column name="DATE_START_PASS" length="23" />
+        </property>
+        <property name="dateEndPass" type="timestamp">
+            <column name="DATE_END_PASS" length="23" />
+        </property>
+        <property name="blockAccess" type="java.lang.Character">
+            <column name="BLOCK_ACCESS" length="1" />
+        </property>
+        <property name="languageCode" type="string">
+            <column name="LANGUAGE_CODE" length="3" />
+        </property>
+    </class>
+</hibernate-mapping>

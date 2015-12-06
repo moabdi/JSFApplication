@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 3 sept. 2009 13:34:26 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="dao.Hibernate.Model.EpsMemos" table="EPS_MEMOS">
+        <composite-id name="id" class="dao.hibernateibernate.Model.EpsMemosId">
+            <key-property name="userCode" type="string">
+                <column name="USER_CODE" length="15" />
+            </key-property>
+            <key-property name="subject" type="string">
+                <column name="SUBJECT" length="32" />
+            </key-property>
+        </composite-id>
+        <property name="details" type="string">
+            <column name="DETAILS" length="500" />
+        </property>
+        <property name="executionDate" type="date">
+            <column name="EXECUTION_DATE" length="7" />
+        </property>
+    </class>
+</hibernate-mapping>

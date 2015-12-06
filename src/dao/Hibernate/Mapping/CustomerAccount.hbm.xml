@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 avr. 2010 17:14:01 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="dao.Hibernate.Model.CustomerAccount" table="Customer_Account">
+        <id name="accountNumber" type="string">
+            <column name="account_number" length="16" />
+            <generator class="assigned" />
+        </id>
+        <property name="balance" type="big_decimal">
+            <column name="balance" precision="18" scale="3" />
+        </property>
+    </class>
+</hibernate-mapping>

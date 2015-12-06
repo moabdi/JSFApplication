@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24 sept. 2009 13:52:36 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="dao.Hibernate.Model.Langue" table="LANGUE">
+        <id name="langueCode" type="string">
+            <column name="LANGUE_CODE" length="3" />
+            <generator class="assigned" />
+        </id>
+        <property name="wording" type="string">
+            <column name="WORDING" length="30" />
+        </property>
+        <property name="languageEmvCode" type="string">
+            <column name="LANGUAGE_EMV_CODE" length="2" />
+        </property>
+    </class>
+</hibernate-mapping>

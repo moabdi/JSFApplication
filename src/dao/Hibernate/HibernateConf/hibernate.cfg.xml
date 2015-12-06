@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory name="EPSHibernate">
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">net.sourceforge.jtds.jdbc.Driver</property>
+        <property name="hibernate.connection.password">eps1234*$</property>
+        <property name="hibernate.connection.url">jdbc:jtds:sqlserver://192.168.1.10:1433/eps_mobile_banking</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.default_catalog">eps_mobile_banking</property>
+        <property name="hibernate.default_schema">dbo</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+        <mapping resource="dao/Hibernate/Mapping/EpsProfile.hbm.xml" />
+        <mapping resource="dao/Hibernate/Mapping/Errors.hbm.xml" />
+        <mapping resource="dao/Hibernate/Mapping/Transactions.hbm.xml" />
+        <mapping resource="dao/Hibernate/Mapping/Customers.hbm.xml" />
+        <mapping resource="dao/Hibernate/Mapping/Merchants.hbm.xml" />
+        <mapping resource="dao/Hibernate/Mapping/CustomerAccount.hbm.xml" />
+        <mapping resource="dao/Hibernate/Mapping/MerchantAccount.hbm.xml" />
+        <mapping resource="dao/Hibernate/Mapping/UserManagement.hbm.xml" /> 
+        <mapping resource="dao/Hibernate/Mapping/TransactionDefinition.hbm.xml" />
+        <mapping resource="dao/Hibernate/Mapping/ErrorsType.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>

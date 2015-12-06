@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 7 avr. 2010 17:14:01 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="dao.Hibernate.Model.EpsProfile" table="EPS_PROFILE">
+        <id name="code" type="string">
+            <column name="CODE" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="value" type="string">
+            <column name="VALUE" length="128" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="2000" />
+        </property>
+    </class>
+</hibernate-mapping>

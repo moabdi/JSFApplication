@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 13 avr. 2010 11:00:22 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="dao.Hibernate.Model.TransactionDefinition" table="TRANSACTION_DEFINITION">
+        <id name="transactionCode" type="string">
+            <column name="transaction_code" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="description" type="string">
+            <column name="description" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 12 avr. 2010 14:23:37 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="dao.Hibernate.Model.Transactions" table="TRANSACTIONS">
+        <id name="idTransaction" type="string">
+            <column name="id_transaction" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="transactionCode" type="string">
+            <column name="transaction_code" length="16" not-null="true" />
+        </property>
+        <property name="customerMsisdn" type="string">
+            <column name="customer_msisdn" length="16" />
+        </property>
+        <property name="merchantMsisdn" type="string">
+            <column name="merchant_msisdn" length="16" />
+        </property>
+        <property name="date" type="timestamp">
+            <column name="date" length="23" />
+        </property>
+        <property name="type" type="java.lang.Character">
+            <column name="type" length="1" />
+        </property>
+        <property name="amount" type="big_decimal">
+            <column name="amount" precision="18" scale="3" />
+        </property>
+        <property name="authCode" type="string">
+            <column name="auth_code" length="6" />
+        </property>
+        <property name="statusFlag" type="java.lang.Character">
+            <column name="status_flag" length="1" />
+        </property>
+        <property name="statusDate" type="timestamp">
+            <column name="status_date" length="23" />
+        </property>
+        <property name="memo" type="string">
+            <column name="memo" length="256" />
+        </property>
+    </class>
+</hibernate-mapping>

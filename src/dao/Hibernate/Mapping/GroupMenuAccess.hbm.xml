@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20 nov. 2009 20:02:08 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="dao.Hibernate.Model.GroupMenuAccess" table="GROUP_MENU_ACCESS">
+        <composite-id name="id" class="dao.hibernate.Model.GroupMenuAccessId">
+            <key-property name="groupName" type="string">
+                <column name="GROUP_NAME" />
+            </key-property>
+            <key-property name="role" type="string">
+                <column name="ROLE" />
+            </key-property>
+        </composite-id>
+    </class>
+    <sql-query name="group_retreive">
+    SELECT DISTINCT(GROUP_NAME) 
+    FROM GROUP_MENU_ACCESS
+	</sql-query>
+</hibernate-mapping>

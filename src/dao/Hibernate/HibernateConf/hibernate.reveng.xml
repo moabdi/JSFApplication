@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+
+<hibernate-reverse-engineering>
+	<table-filter match-name="Merchant_Account"></table-filter>
+	<table-filter match-name="Customer_Account"></table-filter>
+	<table-filter match-name="EPS_PROFILE"></table-filter>
+	<table-filter match-name="Customers"></table-filter>
+	<table-filter match-name="Merchants"></table-filter>
+	<table-filter match-name="USER_MANAGEMENT"></table-filter>
+	<table-filter match-name="TRANSACTIONS"></table-filter>
+	<table-filter match-name="TRANSACTION_DEFINITION"></table-filter>
+	<table-filter match-name="ERRORS_TYPE"></table-filter>
+	<table-filter match-name="ERRORS"></table-filter>
+</hibernate-reverse-engineering>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2 oct. 2009 11:10:32 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="dao.Hibernate.Model.VListOfClaim" table="V_LIST_OF_CLAIM">
+        <composite-id name="id" class="dao.hibernate.Model.VListOfClaimId">
+        	<key-property name="callId" type="string">
+                <column name="CALL_ID" length="10" />
+            </key-property>
+           </composite-id>
+            <property name="cardNumber" type="string">
+                <column name="CARD_NUMBER" length="22" />
+            </property>
+            <property name="merchantNumber" type="string">
+                <column name="MERCHANT_NUMBER" length="22" />
+            </property>
+            
+            <property name="dateAndTimeCall" type="date">
+                <column name="DATE_AND_TIME_CALL" length="7" />
+            </property>
+            <property name="userTakenCall" type="string">
+                <column name="USER_TAKEN_CALL" length="15" />
+            </property>
+            <property name="userDispatchCall" type="string">
+                <column name="USER_DISPATCH_CALL" length="15" />
+            </property>
+            <property name="dispatchDate" type="date">
+                <column name="DISPATCH_DATE" length="7" />
+            </property>
+            <property name="userProcessing" type="string">
+                <column name="USER_PROCESSING" length="15" />
+            </property>
+            <property name="limitDate" type="date">
+                <column name="LIMIT_DATE" length="7" />
+            </property>
+            <property name="callReason" type="string">
+                <column name="CALL_REASON" length="4" />
+            </property>
+            <property name="statusCode" type="java.lang.Character">
+                <column name="STATUS_CODE" length="1" />
+            </property>
+            <property name="statusDate" type="date">
+                <column name="STATUS_DATE" length="7" />
+            </property>
+            <property name="action1Taken" type="string">
+                <column name="ACTION1_TAKEN" length="3" />
+            </property>
+            <property name="action2Taken" type="string">
+                <column name="ACTION2_TAKEN" length="3" />
+            </property>
+            <property name="action3Taken" type="string">
+                <column name="ACTION3_TAKEN" length="3" />
+            </property>
+            <property name="action4Taken" type="string">
+                <column name="ACTION4_TAKEN" length="3" />
+            </property>
+            <property name="generatedFees" type="big_decimal">
+                <column name="GENERATED_FEES" precision="12" scale="3" />
+            </property>
+            <property name="currencyCode" type="string">
+                <column name="CURRENCY_CODE" length="3" />
+            </property>
+            <property name="comments" type="string">
+                <column name="COMMENTS" length="4000" />
+            </property>
+            <property name="entity" type="java.lang.Character">
+                <column name="ENTITY" length="1" />
+            </property>
+        
+    </class>
+</hibernate-mapping>

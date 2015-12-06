@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="1.2" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xi="http://www.w3.org/2001/XInclude"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
+
+  
+
+ <managed-bean>
+  <managed-bean-name>customerAccountBC</managed-bean-name>
+  <managed-bean-class>web.controller.CustomerAccountBC</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+  <managed-property>
+  	<property-name>beanView</property-name>
+  	<property-class>web.view.CustomerAccountBV</property-class>
+  	<value>#{beanView}</value>
+  </managed-property>
+ </managed-bean>
+ 
+ <managed-bean>
+  <managed-bean-name>beanView</managed-bean-name>
+  <managed-bean-class>web.view.CustomerAccountBV</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ 
+  <managed-bean>
+  <managed-bean-name>customerBC</managed-bean-name>
+  <managed-bean-class>web.controller.CustomerBC</managed-bean-class>
+  <managed-bean-scope>request</managed-bean-scope>
+  <managed-property>
+  	<property-name>cbeanView</property-name>
+  	<property-class>web.view.CustomerBV</property-class>
+  	<value>#{cbeanView}</value>
+  </managed-property>
+ </managed-bean>
+ 
+ <managed-bean>
+  <managed-bean-name>cbeanView</managed-bean-name>
+  <managed-bean-class>web.view.CustomerBV</managed-bean-class>
+  <managed-bean-scope>request</managed-bean-scope>
+ </managed-bean>
+ 
+  <managed-bean>
+  <managed-bean-name>customerParamSearch</managed-bean-name>
+  <managed-bean-class>web.view.CustomerParamSearch</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ 
+ <managed-bean>
+  <managed-bean-name>transactionSearchBB</managed-bean-name>
+  <managed-bean-class>web.view.TransactionSearchBB</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ 
+ <managed-bean>
+  <managed-bean-name>errorSearchBB</managed-bean-name>
+  <managed-bean-class>web.view.ErrorSearchBB</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ 
+ 
+   <managed-bean>
+  <managed-bean-name>merchantBC</managed-bean-name>
+  <managed-bean-class>web.controller.MerchantBC</managed-bean-class>
+  <managed-bean-scope>request</managed-bean-scope>
+  <managed-property>
+  	<property-name>merchantBV</property-name>
+  	<property-class>web.view.MerchantBV</property-class>
+  	<value>#{merchantBV}</value>
+  </managed-property>
+ </managed-bean>
+ 
+ <managed-bean>
+  <managed-bean-name>merchantBV</managed-bean-name>
+  <managed-bean-class>web.view.MerchantBV</managed-bean-class>
+  <managed-bean-scope>request</managed-bean-scope>
+ </managed-bean>
+ 
+  <managed-bean>
+  <managed-bean-name>merchantParamSearch</managed-bean-name>
+  <managed-bean-class>web.view.MerchantParamSearch</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ 
+ 
+ 
+ <managed-bean>
+  <managed-bean-name>GlobalVars</managed-bean-name>
+  <managed-bean-class>metier.globalVars.GlobalVars</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ 
+  <managed-bean>
+  <managed-bean-name>loginBean</managed-bean-name>
+  <managed-bean-class>web.controller.LoginBean</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+    <managed-bean>
+  <managed-bean-name>userContext</managed-bean-name>
+  <managed-bean-class>metier.eps.jsf.security.user.UserContext</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+  <managed-bean>
+  <managed-bean-name>applicationLists</managed-bean-name>
+  <managed-bean-class>metier.appLists.ApplicationLists</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+
+ 
+  <managed-bean>
+  <managed-bean-name>userContextManagement</managed-bean-name>
+  <managed-bean-class>metier.eps.jsf.security.user.UserContextManagement</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+
+ <managed-bean>
+  <managed-bean-name>changePassBean</managed-bean-name>
+  <managed-bean-class>web.controller.ChangePassBean</managed-bean-class>
+  <managed-bean-scope>request</managed-bean-scope>
+ </managed-bean>
+ <managed-bean>
+  <managed-bean-name>groupRolesBB</managed-bean-name>
+  <managed-bean-class>web.controller.GroupRolesBB</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+
+ <managed-bean>
+  <managed-bean-name>userParamBB</managed-bean-name>
+  <managed-bean-class>web.controller.UserParamBB</managed-bean-class>
+  <managed-bean-scope>request</managed-bean-scope>
+ </managed-bean>
+  <managed-bean>
+  <managed-bean-name>userParamSearchBB</managed-bean-name>
+  <managed-bean-class>web.controller.UserParamSearchBB</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+ <managed-bean>
+  <managed-bean-name>userRolesBB</managed-bean-name>
+  <managed-bean-class>web.controller.UserRolesBB</managed-bean-class>
+  <managed-bean-scope>request</managed-bean-scope>
+ </managed-bean>
+ <managed-bean>
+  <managed-bean-name>welcomeBB</managed-bean-name>
+  <managed-bean-class>web.controller.WelcomeBB</managed-bean-class>
+  <managed-bean-scope>session</managed-bean-scope>
+ </managed-bean>
+  
+</faces-config>

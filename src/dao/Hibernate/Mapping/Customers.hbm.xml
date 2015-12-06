@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 8 avr. 2010 12:15:36 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="dao.Hibernate.Model.Customers" table="Customers">
+        <id name="msisdn" type="string">
+            <column name="msisdn" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="first_name" length="50"/>
+        </property>
+        <property name="lastName" type="string">
+            <column name="last_name" length="50"/>
+        </property>
+        <property name="sexe" type="string">
+            <column name="sexe" length="5" />
+        </property>
+        <property name="idNumber" type="string">
+            <column name="id_number" length="20"  />
+        </property>
+        <property name="dob" type="timestamp">
+            <column name="dob" length="23" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50"  />
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="50" />
+        </property>
+        <property name="postalCode" type="string">
+            <column name="postal_code" length="20" />
+        </property>
+        <property name="country" type="string">
+            <column name="country" length="30" />
+        </property>
+        <property name="state" type="string">
+            <column name="state" length="30" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="200" />
+        </property>
+        <property name="jobTitle" type="string">
+            <column name="job_title" length="30" />
+        </property>
+        <property name="employerName" type="string">
+            <column name="employer_name" length="30" />
+        </property>
+        <property name="employerNumber" type="string">
+            <column name="employer_number" length="30" />
+        </property>
+        <property name="employerPhone" type="string">
+            <column name="employer_phone" length="30" />
+        </property>
+        <property name="employerAddress" type="string">
+            <column name="employer_address" length="200" />
+        </property>
+        <property name="creationDate" type="timestamp">
+            <column name="creation_date" length="23" />
+        </property>
+        <property name="allowedTrxFlags" type="string">
+            <column name="allowed_trx_flags" length="3" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="1" />
+        </property>
+        <property name="pin" type="string">
+            <column name="pin" length="30"  />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="200" />
+        </property>
+        <property name="accountNumber" type="string">
+            <column name="account_number" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

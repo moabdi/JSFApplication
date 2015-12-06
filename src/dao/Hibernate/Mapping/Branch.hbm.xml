@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18 ao?t 2009 10:35:50 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="dao.Hibernate.Model.Branch" table="BRANCH">
+        <composite-id name="id" class="dao.Hibernate.Model.BranchId">
+            <key-property name="bankCode" type="string">
+                <column name="BANK_CODE" length="5" />
+            </key-property>
+            <key-property name="branchCode" type="string">
+                <column name="BRANCH_CODE" length="5" />
+            </key-property>
+        </composite-id>
+        <property name="cityCode" type="string">
+            <column name="CITY_CODE" length="5" />
+        </property>
+        <property name="countryCode" type="string">
+            <column name="COUNTRY_CODE" length="3" />
+        </property>
+        <property name="wording" type="string">
+            <column name="WORDING" length="30" />
+        </property>
+        <property name="daysBeforeRenew" type="big_decimal">
+            <column name="DAYS_BEFORE_RENEW" scale="0" />
+        </property>
+        <property name="bankLocation" type="string">
+            <column name="BANK_LOCATION" length="20" />
+        </property>
+        <property name="address" type="string">
+            <column name="ADDRESS" length="120" />
+        </property>
+        <property name="zipCode" type="string">
+            <column name="ZIP_CODE" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
